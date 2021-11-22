@@ -27,8 +27,10 @@ public class CongNhan extends CanBo {
 		System.out.println("Gioi tinh: ");
 		setGioiTinh(scanner.next());
 		scanner.nextLine();
-		System.out.println("Bac cong nhan: ");
-		bacCongNhan = scanner.nextInt();
+		System.out.println("Bac cong nhan(>1 && <10): ");
+		while(bacCongNhan <1 || bacCongNhan >10) {
+			bacCongNhan = scanner.nextInt();
+		}
 	}
 
 	@Override
